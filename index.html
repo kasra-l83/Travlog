@@ -9,7 +9,7 @@
     <link rel="icon" href="icon/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <header class="h-28 px-4 flex justify-between items-center flex-row-reverse sm:flex-row">
+    <header class="h-28 px-4 flex justify-between items-center flex-row-reverse sm:flex-row sm:px-16 lg:px-32">
       <button class="size-9 bg-purple text-[white] rounded-xl flex justify-center items-center hover:bg-gray hover:text-[black] lg:hidden">
         <i style="font-size:20px" class="fa">&#xf0c9;</i>
       </button>
@@ -28,6 +28,29 @@
         <button class="w-[115px] font-bold text-sm text-[white] bg-purple rounded-[100px] hover:bg-gray hover:text-[black]">Sign Up</button>
       </div>
     </header>
+    <main class="container mx-auto px-4 xl:px-32">
+      <section class="flex lg:justify-between flex-col-reverse lg:flex-row items-center relative">
+        <div class="gap-y-4 lg:max-w-[400px] flex items-center text-center flex-col lg:items-start lg:text-start">
+          <button class="text-pink text-sm py-4 px-8 bg-[white] rounded-full font-bold shadow-xl flex gap-4">Explore the word!<i style="font-size:20px" class="fa">&#xf290;</i></button>
+          <h1 class="font-bold text-[69px] leading-[83px]">Travel <span class="text-pink">top destination</span> of the world</h1>
+          <p class="text-lg text-[gray] font-normal">We always Make our customer happy by <span class="lg:block">providing</span> as many choices as possible</p>
+          <div class="flex gap-4 w-full justify-center lg:justify-start flex-col sm:flex-row">
+            <button class="py-4 px-8 bg-purple rounded-full text-[white] hover:bg-gray hover:text-purple">Get Started</button>
+            <button class="py-4 px-8 rounded-full border border-[gainsboro] flex items-center justify-center gap-x-2 hover:border-purple"><i style="font-size:20px" class="fa text-purple">&#xf144;</i>Watch Demo</button>
+          </div>
+        </div>
+        <div class="hidden sm:block sm:h-[710px] relative">
+          <img src="image/world.png" alt="World">
+          <img src="image/neighborhood.png" alt="Neighborhood" class="place-self-center sm:place-self-start sm:ml-10 sm:mt-[-170px] md:ml-24 md:mt-[-200px] lg:ml-5 lg:mt-[-150px] xl:ml-10 xl:mt-[-150px] 2xl:ml-24 2xl:mt-[-210px] mb-7">
+          <img src="image/mountaineer.png" alt="Mountaineer" class="place-self-center sm:place-self-start sm:ml-10 md:ml-24 lg:ml-5 xl:ml-10 2xl:ml-24 mb-7 sm:mb-0">
+          <img src="image/photographer.png" alt="Photographer" class="place-self-center sm:place-self-end sm:mt-[-500px] md:mr-16 md:mt-[-520px] lg:mr-0 lg:mt-[-550px] xl:mr-2 2xl:mt-[-510px] 2xl:mr-24">
+          <i style="font-size:50px" class="fa text-pink absolute bottom-80 left-3 md:bottom-80 md:left-16 lg:bottom-80 lg:left-0 xl:left-2 2xl:left-16">&#xf2c6;</i>
+          <div class="py-4 px-8 bg-[white] rounded-full font-bold text-sm shadow absolute hidden md:inline-flex md:right-0 md:bottom-44 lg:hidden xl:inline-flex xl:right-[-70px] xl:bottom-48 2xl:right-0 2xl:bottom-40 gap-2"><i class="material-icons text-yellow">&#xe0c8;</i>Top places</div>
+          <div class="size-12 bg-orange rounded-full flex justify-center items-center place-self-end sm:mr-40 sm:mt-16 md:mr-56 md:mt-20 lg:mr-40 lg:mt-24 2xl:mr-60 2xl:mt-16"><i class="material-icons text-[white]">&#xe7fe;</i></div>
+        </div>
+        <img src="icon/object.png" class="absolute hidden xl:block bottom-[-130px] left-[-100px]">
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
