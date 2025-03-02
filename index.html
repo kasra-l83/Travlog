@@ -8,9 +8,9 @@
     <title>Travlog</title>
     <link rel="icon" href="icon/logo.png" type="image/x-icon" />
   </head>
-  <body>
+  <body class="sm:space-y-20">
     <header class="h-28 px-4 flex justify-between items-center flex-row-reverse sm:flex-row sm:px-16 lg:px-32">
-      <button class="size-9 bg-purple text-[white] rounded-xl flex justify-center items-center hover:bg-gray hover:text-[black] lg:hidden">
+      <button class="size-9 bg-purple text-[white] rounded-xl flex justify-center items-center hover:bg-gray hover:text-purple lg:hidden">
         <i style="font-size:20px" class="fa">&#xf0c9;</i>
       </button>
       <span class="flex items-center gap-x-4">
@@ -25,7 +25,7 @@
       </ul>
       <div class="h-12 hidden gap-x-7 sm:flex">
         <button class="font-bold text-sm hover:text-purple">Log In</button>
-        <button class="w-[115px] font-bold text-sm text-[white] bg-purple rounded-[100px] hover:bg-gray hover:text-[black]">Sign Up</button>
+        <button class="w-[115px] font-bold text-sm text-[white] bg-purple rounded-[100px] hover:bg-gray hover:text-purple">Sign Up</button>
       </div>
     </header>
     <main class="container mx-auto px-4 xl:px-32 space-y-20">
@@ -48,7 +48,7 @@
           <div class="py-4 px-8 bg-[white] rounded-full font-bold text-sm shadow absolute hidden md:inline-flex md:right-0 md:bottom-44 lg:hidden xl:inline-flex xl:right-[-70px] xl:bottom-48 2xl:right-0 2xl:bottom-40 gap-2"><i class="material-icons text-yellow">&#xe0c8;</i>Top places</div>
           <div class="size-12 bg-orange rounded-full flex justify-center items-center place-self-end sm:mr-40 sm:mt-16 md:mr-56 md:mt-20 lg:mr-40 lg:mt-24 2xl:mr-60 2xl:mt-16"><i class="material-icons text-[white]">&#xe7fe;</i></div>
         </div>
-        <img src="icon/object.png" class="absolute hidden xl:block bottom-[-130px] left-[-100px]">
+        <img src="icon/triangles.png" class="absolute hidden xl:block bottom-[-130px] left-[-100px]">
       </section>
       <section class="flex justify-between flex-wrap gap-5">
         <img src="icon/tripadvisor.png" alt="Tripadvisor">
@@ -88,7 +88,7 @@
           </div>
           <div class="flex gap-x-8">
             <button class="size-[100px] border border-[gainsboro] rounded-full hover:border-purple"><i style="font-size:20px" class="fa">&#xf177;</i></button>
-            <button class="size-[100px] bg-purple text-[white] rounded-full hover:bg-gray hover:text-[black]"><i style="font-size:20px" class="fa">&#xf178;</i></button>
+            <button class="size-[100px] bg-purple text-[white] rounded-full hover:bg-gray hover:text-purple"><i style="font-size:20px" class="fa">&#xf178;</i></button>
           </div>
         </div>
         <div class="gap-5 grid grid-cols-1 place-self-center sm:grid-cols-3">
@@ -192,7 +192,7 @@
           <button class="size-[100px] bg-[white] z-10 border border-[gainsboro] rounded-full hover:border-purple">
             <i style="font-size:20px" class="fa">&#xf177;</i>
           </button>
-          <button class="size-[100px] bg-purple text-[white] rounded-full hover:bg-gray hover:text-[black]">
+          <button class="size-[100px] bg-purple text-[white] rounded-full hover:bg-gray hover:text-purple">
             <i style="font-size:20px" class="fa">&#xf178;</i>
           </button>
         </span>
@@ -217,10 +217,66 @@
         <h2 class="text-4xl font-bold">Prepare yourself & let’s explore the beauty of the world</h2>
         <span class="w-full flex justify-between flex-wrap gap-x-10 gap-y-7 sm:h-24 sm:flex-nowrap 2xl:px-28">
           <input name="email" autocomplete="additional-name" type="email" placeholder="Your Email" class="w-full rounded-[32px] text-2xl font-bold p-8 placeholder:text-[gray]">
-          <button class="w-full h-24 text-[white] text-2xl font-bold bg-purple rounded-[32px] sm:w-[237px]">Subscribe</button>
+          <button class="w-full h-24 text-[white] text-2xl font-bold bg-purple rounded-[32px] hover:bg-[white] hover:text-purple sm:w-[237px]">Subscribe</button>
         </span>
       </section>
     </main>
+    <footer class="px-4 flex justify-between items-center gap-8 flex-col pb-5 sm:px-16 lg:flex-row lg:px-32">
+      <div class="space-y-8">
+        <span class="h-10 flex items-center gap-x-4">
+          <img src="icon/logo.png" alt="Logo" class="size-10">
+          <h3 class="font-bold text-2xl">Travlog</h3>
+        </span>
+        <p class="text-2xl text-[gray] font-normal">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+        <span class="flex gap-8 text-[white] text-lg">
+          <button class="size-8 rounded-[32px] bg-purple hover:bg-gray hover:text-purple">
+            <i class="fa">&#xf09a;</i>
+          </button>
+          <button class="size-8 rounded-[32px] bg-purple hover:bg-gray hover:text-purple">
+            <i class="fa">&#xf099;</i>
+          </button>
+          <button class="size-8 rounded-[32px] bg-purple hover:bg-gray hover:text-purple">
+            <i class="fa">&#xf16d;</i>
+          </button>
+        </span>
+      </div>
+      <div class="w-full justify-between gap-x-10 hidden sm:flex">
+        <ul class="list-none flex flex-col gap-y-8 text-[gray] text-lg font-normal">
+          <li class="text-2xl text-[black] font-bold">Company</li>
+          <li class="cursor-pointer hover:text-purple">About</li>
+          <li class="cursor-pointer hover:text-purple">Career</li>
+          <li class="cursor-pointer hover:text-purple">Mobile</li>
+        </ul>
+        <ul class="list-none flex flex-col gap-y-8 text-[gray] text-lg font-normal">
+          <li class="text-2xl text-[black] font-bold">Contact</li>
+          <li class="cursor-pointer hover:text-purple">Why Travlog?</li>
+          <li class="cursor-pointer hover:text-purple">Partner with us</li>
+          <li class="cursor-pointer hover:text-purple">FAQ’s</li>
+          <li class="cursor-pointer hover:text-purple">Blog</li>
+        </ul>
+        <ul class="list-none flex flex-col gap-y-8 text-[gray] text-lg font-normal">
+          <li class="text-2xl text-[black] font-bold">Meet Us</li>
+          <li>+00 92 1234 56789</li>
+          <li>info@travlog.com</li>
+          <li>205. R Street, New York</li>
+          <li>BD23200</li>
+        </ul>
+      </div>
+      <div class="w-full space-y-8 sm:hidden">
+        <span class="flex justify-between items-center cursor-pointer hover:text-purple">
+          <h4 class="text-2xl font-bold">Company</h4>
+          <i class="material-icons">&#xe5c6;</i>
+        </span>
+        <span class="flex justify-between items-center cursor-pointer hover:text-purple">
+          <h4 class="text-2xl font-bold">Contact Us</h4>
+          <i class="material-icons">&#xe5c6;</i>
+        </span>
+        <span class="flex justify-between items-center cursor-pointer hover:text-purple">
+          <h4 class="text-2xl font-bold">Meet Us</h4>
+          <i class="material-icons">&#xe5c6;</i>
+        </span>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
