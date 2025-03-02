@@ -29,12 +29,12 @@
       </div>
     </header>
     <main class="container mx-auto px-4 xl:px-32 space-y-20">
-      <section class="flex lg:justify-between flex-col-reverse lg:flex-row items-center relative">
-        <div class="gap-y-4 lg:max-w-[400px] flex items-center text-center flex-col lg:items-start lg:text-start">
+      <section class="flex flex-col-reverse items-center relative lg:justify-between lg:flex-row">
+        <div class="gap-y-4 flex items-center text-center flex-col lg:items-start lg:text-start lg:max-w-[400px]">
           <button class="text-pink text-sm py-4 px-8 bg-[white] rounded-full font-bold shadow-xl flex gap-4">Explore the word!<i style="font-size:20px" class="fa">&#xf290;</i></button>
           <h1 class="font-bold text-[69px] leading-[83px]">Travel <span class="text-pink">top destination</span> of the world</h1>
           <p class="text-lg text-[gray] font-normal">We always Make our customer happy by <span class="lg:block">providing</span> as many choices as possible</p>
-          <div class="flex gap-4 w-full justify-center lg:justify-start flex-col sm:flex-row">
+          <div class="flex gap-4 w-full justify-center flex-col sm:flex-row lg:justify-start">
             <button class="py-4 px-8 bg-purple rounded-full text-[white] hover:bg-gray hover:text-purple">Get Started</button>
             <button class="py-4 px-8 rounded-full border border-[gainsboro] flex items-center justify-center gap-x-2 hover:border-purple"><i style="font-size:20px" class="fa text-purple">&#xf144;</i>Watch Demo</button>
           </div>
@@ -63,20 +63,67 @@
           <h2 class="font-bold text-3xl leading-[53px] sm:text-4xl lg:text-5xl">Our top value categories for you</h2>
         </div>
         <div class="flex flex-col sm:flex-row gap-5">
-          <div class="py-16 border border-[gainsboro] rounded-[32px] flex flex-col gap-y-16 items-center">
+          <div class="py-16 border max-w-[374px] w-full border-[gainsboro] rounded-[32px] flex flex-col gap-y-16 items-center sm:max-w-full">
             <img src="icon/destination.png" class="size-16">
             <h5 class="h-9 text-2xl text-center leading-[34px] font-bold sm:text-3xl">Best Tour Guide</h5>
             <p class="text-lg text-center text-gray-400 font-normal leading-7">What looked like a small patch of purple grass, above five feet.</p>
           </div>
-          <div class="py-16 border border-[gainsboro] rounded-[32px] shadow-2xl flex flex-col items-center gap-y-16">
+          <div class="py-16 border max-w-[374px] w-full border-[gainsboro] rounded-[32px] shadow-2xl flex flex-col items-center gap-y-16 sm:max-w-full">
             <img src="icon/calender.png" class="size-16">
             <h5 class="h-9 font-bold text-2xl text-center leading-[34px] sm:text-3xl">Easy Booking</h5>
             <p class="font-normal text-lg text-center text-gray-400 leading-7">Square, was moving across the sand in their direction.</p>
           </div>
-          <div class="py-16 border border-[gainsboro] rounded-[32px] shadow-2xl flex flex-col gap-y-16 items-center">
+          <div class="py-16 border max-w-[374px] w-full border-[gainsboro] rounded-[32px] shadow-2xl flex flex-col gap-y-16 items-center sm:max-w-full">
             <img src="icon/temperature.png" class="size-16">
             <h5 class="h-9 font-bold text-3xl text-center leading-[34px]">Weather Forecast</h5>
             <p class="font-normal text-lg text-center text-gray-400 leading-7">What looked like a small patch of purple grass, above five feet.</p>
+          </div>
+        </div>
+      </section>
+      <section class="space-y-10">
+        <div class="flex flex-col items-center gap-y-10 lg:flex-row lg:justify-between">
+          <div class="flex flex-col justify-between items-center lg:items-start">
+            <h4 class="text-2xl text-pink font-bold tracking-widest">TOP DESTINATION</h4>
+            <h2 class="text-5xl text-center font-bold">Explore top destination</h2>
+          </div>
+          <div class="flex gap-x-8">
+            <button class="size-[100px] border border-[gainsboro] rounded-full hover:border-purple"><i style="font-size:20px" class="fa">&#xf177;</i></button>
+            <button class="size-[100px] bg-purple text-[white] rounded-full hover:bg-gray hover:text-[black]"><i style="font-size:20px" class="fa">&#xf178;</i></button>
+          </div>
+        </div>
+        <div class="gap-5 grid grid-cols-1 place-self-center sm:grid-cols-3">
+          <div class="shadow-2xl rounded-[32px] max-w-[374px] w-full">
+            <img src="image/beach.png" alt="Beach">
+            <div class="p-8 flex flex-col gap-4">
+              <span class="flex sm:flex-col lg:flex-row">
+                <h4 class="text-2xl font-bold line-clamp-2">Paradise Beach, Bantayan Island</h4>
+                <h6 class="text-2xl text-pink font-bold">$550.16</h6>
+              </span>
+              <p class="text-[18px] font-normal text-[gray]">Rome, Italy</p>
+              <p class="text-lg font-bold text-orange">4.8<i class="fa ml-1">&#xf005;</i></p>
+            </div>
+          </div>
+          <div class="shadow-2xl rounded-[32px] max-w-[374px] w-full">
+            <img src="image/fish.png" alt="Fish">
+            <div class="p-8 flex flex-col gap-4">
+              <span class="flex sm:flex-col lg:flex-row">
+                <h4 class="text-2xl font-bold line-clamp-2">Ocean with full of Colors</h4>
+                <h6 class="text-2xl text-pink font-bold">$20.99</h6>
+              </span>
+              <p class="text-[18px] font-normal text-[gray]">Maldives</p>
+              <p class="text-lg font-bold text-orange">4.5<i class="fa ml-1">&#xf005;</i></p>
+            </div>
+          </div>
+          <div class="shadow-2xl rounded-[32px] max-w-[374px] w-full">
+            <img src="image/mountain.png" alt="Mountain">
+            <div class="p-8 flex flex-col gap-4">
+              <span class="flex sm:flex-col lg:flex-row">
+                <h4 class="text-2xl font-bold line-clamp-2">Mountain View, Above the cloud</h4>
+                <h6 class="text-2xl text-pink font-bold">$150.99</h6>
+              </span>
+              <p class="text-[18px] font-normal text-[gray]">United Arab Emeries</p>
+              <p class="text-lg font-bold text-orange">5.0<i class="fa ml-1">&#xf005;</i></p>
+            </div>
           </div>
         </div>
       </section>
